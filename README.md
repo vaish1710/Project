@@ -28,8 +28,7 @@
             width: 100vw; /* Ensure container fills the viewport width */
             height: 100vh; /* Ensure container fills the viewport height */
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.6); /* Darken the background for readability */
-            position: relative; /* Changed from absolute to ensure content is centered */
+            position: relative; /* Ensure content is centered properly */
         }
 
         /* Style for the portfolio content */
@@ -38,8 +37,11 @@
             border-radius: 15px;
             background-color: rgba(0, 0, 0, 0.6); /* Slightly darker background for readability */
             position: relative; /* Ensure proper centering */
-            box-shadow: none !important; /* Force removal of box shadow */
+            box-shadow: none; /* Remove box shadow */
             border: none; /* Ensure no border is applied */
+            color: white; /* Ensure text color is white */
+            max-width: 90%; /* Ensure the container doesn't exceed viewport width */
+            margin: 20px; /* Add margin for better spacing */
         }
 
         /* Style for the name */
@@ -59,11 +61,12 @@
         /* Paragraph styling */
         p {
             font-size: 1.2em;
-            margin: 0;
+            margin: 0; /* Remove margin to eliminate space between elements */
             color: black; /* Change paragraph color to black */
-            background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque background for readability */
+            background-color: transparent; /* Remove background color */
             padding: 10px; /* Add padding for better readability */
-            border-radius: 5px; /* Rounded corners for paragraphs */
+            border-radius: 5px; /* Optional: rounded corners for paragraphs */
+            max-width: 100%; /* Ensure paragraphs don't exceed container width */
         }
 
         a {
@@ -85,21 +88,15 @@
             color: white;
             border: none;
             border-radius: 3px; /* Reduced corner radius */
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
             text-decoration: none;
             cursor: pointer;
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
             opacity: 0; /* Start with buttons hidden */
             visibility: hidden; /* Hide buttons initially */
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
         }
 
         .btn:hover {
             background-color: #45a049;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
         }
 
         /* Email Icon Styling */
