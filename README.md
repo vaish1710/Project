@@ -6,15 +6,16 @@
     <title>My GitHub Portfolio</title>
     <style>
       /* Apply a background image */
+/* Apply a background image */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp');
-    background-size: cover;
+    background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100vh; /* Ensures the body takes the full viewport height */
     color: white;
 }
 
@@ -100,8 +101,8 @@ a:hover {
     cursor: pointer;
 }
 
-        }
-    </style>
+
+</style>
 </head>
 <body>
     <div class="container">
@@ -112,13 +113,13 @@ a:hover {
             <p>Check out my repositories on <a href="https://github.com/vaish1710" target="_blank">GitHub</a>.</p>
         </div>
 
-        <!-- Align buttons and icon at the bottom -->
-        <div class="bottom-buttons">
-            <!-- Download Resume Button -->
+<!-- Align buttons and icon at the bottom -->
+<div class="bottom-buttons">
+<!-- Download Resume Button -->
             <a href="https://raw.githubusercontent.com/vaish1710/CS620/main/Resume.pdf" class="btn" download="Vaishnavi_Resume.pdf">Download Resume</a>
 
             <!-- Email Icon Button -->
-            <div class="icon">
+<div class="icon">
                 <a href="mailto:vaish.paruchuri@gmail.com?subject=Portfolio Inquiry">
                     <img src="https://cdn.pixabay.com/photo/2016/06/13/17/30/mail-1454733_640.png" alt="Email Icon" />
                 </a>
