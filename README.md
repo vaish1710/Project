@@ -17,6 +17,9 @@
             background-repeat: no-repeat;
             color: white;
             overflow-x: hidden; /* Prevent horizontal scroll */
+            transform: scale(0.85); /* Zoom out the page */
+            transform-origin: top left; /* Ensure scaling is from the top-left corner */
+            width: 117.65%; /* Adjust width to counteract scaling */
         }
 
         /* Container to ensure content stays within viewport */
@@ -27,6 +30,7 @@
             min-height: 100vh; /* Ensures container fills the viewport height */
             padding: 20px;
             box-sizing: border-box; /* Include padding in the height calculation */
+            position: relative;
         }
 
         /* Style for the portfolio content */
@@ -39,7 +43,7 @@
             box-shadow: none; /* Remove box shadow */
             border: none; /* Ensure no border is applied */
             color: white; /* Ensure text color is white */
-            margin-top: auto; /* Push the content to the top of the container */
+            text-align: center; /* Center align text */
             margin-bottom: 20px; /* Add margin to the bottom */
         }
 
@@ -49,6 +53,7 @@
             margin: 0;
             font-weight: bold;
             text-decoration: none; /* Ensure no underline */
+            text-align: center; /* Center align heading */
         }
 
         /* Ensure no underline for links within h1 */
@@ -66,7 +71,7 @@
             padding: 10px; /* Add padding for better readability */
             border-radius: 5px; /* Optional: rounded corners for paragraphs */
             max-width: 100%; /* Ensure paragraphs don't exceed container width */
-            box-sizing: border-box; /* Include padding in the width calculation */
+            text-align: center; /* Center align paragraph text */
         }
 
         a {
@@ -91,8 +96,6 @@
             text-decoration: none;
             cursor: pointer;
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            opacity: 0; /* Start with buttons hidden */
-            visibility: hidden; /* Hide buttons initially */
         }
 
         .btn:hover {
@@ -105,7 +108,7 @@
             height: 40px;
             cursor: pointer;
         }
-        
+
         .bottom-buttons {
             position: fixed;
             bottom: 20px;
@@ -144,7 +147,7 @@
         // JavaScript to show buttons when scrolled to the bottom
         window.addEventListener('scroll', function() {
             const bottomButtons = document.querySelector('.bottom-buttons');
-            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+            if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
                 bottomButtons.style.opacity = '1';
                 bottomButtons.style.visibility = 'visible';
             } else {
