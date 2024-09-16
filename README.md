@@ -15,33 +15,32 @@
             background-size: cover; /* Ensures the image covers the entire viewport */
             background-position: center;
             background-repeat: no-repeat;
-            height: 100vh; /* Ensures the body takes the full viewport height */
             color: white;
             overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
-        /* Center the content and fill the entire page */
-        .container {
+        /* Container to ensure content stays within viewport */
+        .content-container {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            width: 100vw; /* Ensure container fills the viewport width */
-            height: 100vh; /* Ensure container fills the viewport height */
-            text-align: center;
-            position: relative; /* Ensure content is centered properly */
+            min-height: 100vh; /* Ensures container fills the viewport height */
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in the height calculation */
         }
 
         /* Style for the portfolio content */
         .portfolio {
+            width: 100%;
+            max-width: 900px; /* Limit the width of the content */
             padding: 20px;
             border-radius: 15px;
             background-color: rgba(0, 0, 0, 0.6); /* Slightly darker background for readability */
-            position: relative; /* Ensure proper centering */
             box-shadow: none; /* Remove box shadow */
             border: none; /* Ensure no border is applied */
             color: white; /* Ensure text color is white */
-            max-width: 90%; /* Ensure the container doesn't exceed viewport width */
-            margin: 20px; /* Add margin for better spacing */
+            margin-top: auto; /* Push the content to the top of the container */
+            margin-bottom: 20px; /* Add margin to the bottom */
         }
 
         /* Style for the name */
@@ -67,6 +66,7 @@
             padding: 10px; /* Add padding for better readability */
             border-radius: 5px; /* Optional: rounded corners for paragraphs */
             max-width: 100%; /* Ensure paragraphs don't exceed container width */
+            box-sizing: border-box; /* Include padding in the width calculation */
         }
 
         a {
@@ -113,11 +113,12 @@
             transform: translateX(-50%);
             display: flex;
             gap: 20px;
+            z-index: 1000; /* Ensure buttons are above other content */
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="content-container">
         <div class="portfolio">
             <h1>Vaishnavi Paruchuri</h1>
             <p>Data Science and Analytics Master's Student</p>
