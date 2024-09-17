@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,9 +16,9 @@
             background-repeat: no-repeat;
             color: white;
             overflow-x: hidden; /* Prevent horizontal scroll */
-            transform: scale(0.85); /* Zoom out the page */
+            transform: scale(0.95); /* Zoom in the page by 5% */
             transform-origin: top left; /* Ensure scaling is from the top-left corner */
-            width: 117.65%; /* Adjust width to counteract scaling */
+            width: 105.26%; /* Adjust width to counteract scaling */
         }
 
         /* Container to ensure content stays within viewport */
@@ -31,6 +30,7 @@
             padding: 20px;
             box-sizing: border-box; /* Include padding in the height calculation */
             position: relative;
+            margin-bottom: 100px; /* Add margin to ensure footer visibility */
         }
 
         /* Style for the portfolio content */
@@ -44,6 +44,7 @@
             border: none; /* Ensure no border is applied */
             color: white; /* Ensure text color is white */
             text-align: center; /* Center align text */
+            margin-top: auto; /* Push the content to the top of the container */
             margin-bottom: 20px; /* Add margin to the bottom */
         }
 
