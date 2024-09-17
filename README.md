@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,7 +27,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 120vh; /* Increased height to allow for scrolling */
+            min-height: 150vh; /* Increased height to allow for scrolling */
             padding: 20px;
             box-sizing: border-box; /* Include padding in the height calculation */
             position: relative;
@@ -39,12 +40,13 @@
             padding: 20px;
             border-radius: 15px;
             background-color: rgba(0, 0, 0, 0.6); /* Slightly darker background for readability */
-            box-shadow: none; /* Remove box shadow */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a shadow around the text box */
             border: none; /* Ensure no border is applied */
             color: white; /* Ensure text color is white */
             text-align: center; /* Center align text */
-            margin-top: auto; /* Push the content to the top of the container */
+            margin-top: 60px; /* Push the content down from the top */
             margin-bottom: 60px; /* Add margin to the bottom */
+            position: relative;
         }
 
         /* Style for the name */
@@ -147,7 +149,7 @@
         // JavaScript to show buttons when scrolled to the bottom
         window.addEventListener('scroll', function() {
             const bottomButtons = document.querySelector('.bottom-buttons');
-            if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+            if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 10) {
                 bottomButtons.style.opacity = '1';
                 bottomButtons.style.visibility = 'visible';
             } else {
