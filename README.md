@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +16,8 @@
             background-repeat: no-repeat;
             color: white;
             overflow-x: hidden;
-            /* No scaling or width adjustments */
+            height: 100vh; /* Full viewport height */
+            box-sizing: border-box;
         }
 
         /* Container to ensure content stays within viewport */
@@ -25,7 +25,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 120vh; /* Increased height to allow for extra scrolling */
+            height: 80vh; /* Background image covers 80% of viewport height */
             padding: 20px;
             box-sizing: border-box;
         }
@@ -42,7 +42,7 @@
             color: white;
             text-align: center;
             margin-top: 60px;
-            margin-bottom: 100px; /* Extra space for scrolling */
+            /* No margin-bottom to keep in the bottom 20% space */
         }
 
         /* Style for the name */
@@ -106,14 +106,16 @@
             cursor: pointer;
         }
 
-        .bottom-buttons {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
+        /* Fixed bottom space styling */
+        .bottom-space {
+            height: 20vh; /* 20% of viewport height */
             display: flex;
-            gap: 20px;
-            z-index: 1000;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         /* Copyright Styling */
@@ -127,30 +129,11 @@
             padding: 5px 10px;
             border-radius: 5px;
         }
-
-        /* Scroll Back Up Link */
-        .scroll-up {
-            position: fixed;
-            bottom: 80px; /* Position below the fixed buttons */
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-align: center;
-            cursor: pointer;
-            font-size: 1em;
-            z-index: 1000;
-        }
-
-        .scroll-up:hover {
-            background-color: rgba(0, 0, 0, 0.9);
-        }
     </style>
 </head>
 <body>
     <div class="content-container">
+        <!-- Content in the 80% background area -->
         <div class="portfolio">
             <h1>Vaishnavi Paruchuri</h1>
             <p>Data Science and Analytics Master's Student</p>
@@ -159,27 +142,25 @@
         </div>
     </div>
 
-    <!-- Fixed buttons at the bottom -->
-    <div class="bottom-buttons">
-        <!-- Download Resume Button -->
-        <a href="https://raw.githubusercontent.com/vaish1710/CS620/main/Resume.pdf" class="btn" download="Vaishnavi_Resume.pdf">Download Resume</a>
+    <!-- Bottom space with additional content -->
+    <div class="bottom-space">
+        <!-- Fixed buttons at the bottom -->
+        <div class="bottom-buttons">
+            <!-- Download Resume Button -->
+            <a href="https://raw.githubusercontent.com/vaish1710/CS620/main/Resume.pdf" class="btn" download="Vaishnavi_Resume.pdf">Download Resume</a>
 
-        <!-- Email Icon Button -->
-        <div class="icon">
-            <a href="mailto:vaish.paruchuri@gmail.com?subject=Portfolio Inquiry">
-                <img src="https://cdn.pixabay.com/photo/2016/06/13/17/30/mail-1454733_640.png" alt="Email Icon" />
-            </a>
+            <!-- Email Icon Button -->
+            <div class="icon">
+                <a href="mailto:vaish.paruchuri@gmail.com?subject=Portfolio Inquiry">
+                    <img src="https://cdn.pixabay.com/photo/2016/06/13/17/30/mail-1454733_640.png" alt="Email Icon" />
+                </a>
+            </div>
         </div>
     </div>
 
     <!-- Copyright Text -->
     <div class="copyright">
         &copy; Vaishnavi Paruchuri
-    </div>
-
-    <!-- Scroll Back Up Text -->
-    <div class="scroll-up" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-        End of Page. Scroll Back Up
     </div>
 </body>
 </html>
