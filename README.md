@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,22 +11,32 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: white;
+            background-color: white; /* Set white background for the whole page */
+            color: black; /* Default text color */
             overflow-x: hidden;
             height: 100vh; /* Full viewport height */
             box-sizing: border-box;
         }
 
-        /* Container to ensure content stays within viewport */
+        /* Background image container */
+        .background-image {
+            height: 70vh; /* Top 70% of the viewport height */
+            background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            width: 100%;
+        }
+
+        /* Content container for the white section */
         .content-container {
+            height: 30vh; /* Bottom 30% of the viewport height */
+            background-color: white;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            height: 80vh; /* Background image covers 80% of viewport height */
             padding: 20px;
             box-sizing: border-box;
         }
@@ -41,8 +52,6 @@
             border: none;
             color: white;
             text-align: center;
-            margin-top: 60px;
-            /* No margin-bottom to keep in the bottom 20% space */
         }
 
         /* Style for the name */
@@ -108,14 +117,10 @@
 
         /* Fixed bottom space styling */
         .bottom-space {
-            height: 20vh; /* 20% of viewport height */
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            box-sizing: border-box;
+            margin-top: 20px;
         }
 
         /* Copyright Styling */
@@ -123,29 +128,32 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            color: white;
+            color: black;
             font-size: 1em;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.1);
             padding: 5px 10px;
             border-radius: 5px;
         }
     </style>
 </head>
 <body>
+    <!-- Background Image Section -->
+    <div class="background-image">
+        <!-- Background image is set as a background -->
+    </div>
+
+    <!-- White Background Content Section -->
     <div class="content-container">
-        <!-- Content in the 80% background area -->
+        <!-- Portfolio Content -->
         <div class="portfolio">
             <h1>Vaishnavi Paruchuri</h1>
             <p>Data Science and Analytics Master's Student</p>
             <p>I hold an undergraduate degree in Computer Science and am currently pursuing a master's in Data Science and Analytics. My primary interest lies in uncovering valuable outcomes from data, driving insights that lead to informed decisions and innovation.</p>
             <p>Check out my repositories on <a href="https://github.com/vaish1710" target="_blank">GitHub</a>.</p>
         </div>
-    </div>
 
-    <!-- Bottom space with additional content -->
-    <div class="bottom-space">
-        <!-- Fixed buttons at the bottom -->
-        <div class="bottom-buttons">
+        <!-- Buttons -->
+        <div class="bottom-space">
             <!-- Download Resume Button -->
             <a href="https://raw.githubusercontent.com/vaish1710/CS620/main/Resume.pdf" class="btn" download="Vaishnavi_Resume.pdf">Download Resume</a>
 
