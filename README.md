@@ -16,10 +16,10 @@
             background-repeat: no-repeat;
             color: white;
             overflow-x: hidden;
-            transform: scale(0.85); /* Zoom out more to 85% */
+            transform: scale(0.95); /* Zoom out to 95% */
             transform-origin: top left;
-            width: 117.65%; /* Adjust width to counteract scaling */
-            height: 100%; /* Ensure body covers the full height */
+            width: 105.26%; /* Adjust width to counteract scaling */
+            height: 100%;
             box-sizing: border-box;
         }
 
@@ -27,9 +27,8 @@
         .content-container {
             display: flex;
             flex-direction: column;
-            justify-content: flex-end; /* Align content to the bottom */
             align-items: center;
-            min-height: 150vh; /* Extend height to allow for scrolling */
+            min-height: 100vh; /* Ensure content fits within viewport */
             padding: 20px;
             box-sizing: border-box;
         }
@@ -45,6 +44,7 @@
             border: none;
             color: white;
             text-align: center;
+            margin-top: 60px;
             margin-bottom: 60px;
         }
 
@@ -130,6 +130,26 @@
             padding: 5px 10px;
             border-radius: 5px;
         }
+
+        /* Scroll Back Up Link */
+        .scroll-up {
+            position: fixed;
+            bottom: 80px; /* Position above the copyright */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 1em;
+            z-index: 1000;
+        }
+
+        .scroll-up:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
     </style>
 </head>
 <body>
@@ -158,6 +178,11 @@
     <!-- Copyright Text -->
     <div class="copyright">
         &copy; Vaishnavi Paruchuri
+    </div>
+
+    <!-- Scroll Back Up Text -->
+    <div class="scroll-up" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        End of Page. Scroll Back Up
     </div>
 </body>
 </html>
