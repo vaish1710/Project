@@ -44,9 +44,22 @@
             padding: 20px;
             box-sizing: border-box;
             border-radius: 15px;
+            position: relative;
+            z-index: 1; /* Ensure this content is on top of the background */
         }
 
-    
+        /* Style for the portfolio content */
+        .portfolio {
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: white; /* Set background color to white */
+            box-shadow: none; /* Remove shadow */
+            border: none;
+            color: black; /* Change text color to black */
+            text-align: center;
+        }
 
         /* Style for the name */
         h1 {
