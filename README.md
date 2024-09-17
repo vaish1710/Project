@@ -11,8 +11,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #001f3f; /* Dark blue background for space theme */
-            background-image: url('https://images.unsplash.com/photo-1487036222628-c8287f8ec31a'); /* Starry sky background */
+            background-color: #000; /* Fallback color */
+            background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20210815/pngtree-space-background-picture-image_668089.jpg'); /* Space background image */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -31,8 +31,6 @@
             background-repeat: no-repeat;
             position: relative;
             width: 100%;
-            /* Optional: Add a dark overlay to blend with space theme */
-            /* background-color: rgba(0, 0, 0, 0.5); */
         }
 
         /* Content container for the white section */
