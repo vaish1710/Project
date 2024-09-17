@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,89 +12,88 @@
             margin: 0;
             padding: 0;
             background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp');
-            background-size: cover; /* Ensures the image covers the entire viewport */
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             color: white;
-            overflow-x: hidden; /* Prevent horizontal scroll */
-            transform: scale(0.95); /* Zoom in the page by 5% */
-            transform-origin: top left; /* Ensure scaling is from the top-left corner */
-            width: 105.26%; /* Adjust width to counteract scaling */
+            overflow-x: hidden;
+            transform: scale(0.95);
+            transform-origin: top left;
+            width: 105.26%;
+            height: 100vh;
+            box-sizing: border-box;
         }
 
         /* Container to ensure content stays within viewport */
         .content-container {
             display: flex;
             flex-direction: column;
+            justify-content: center; /* Center content vertically */
             align-items: center;
-            min-height: 150vh; /* Increased height to allow for scrolling */
+            min-height: 100vh;
             padding: 20px;
-            box-sizing: border-box; /* Include padding in the height calculation */
-            position: relative;
+            box-sizing: border-box;
         }
 
         /* Style for the portfolio content */
         .portfolio {
             width: 100%;
-            max-width: 900px; /* Limit the width of the content */
+            max-width: 900px;
             padding: 20px;
             border-radius: 15px;
-            background-color: rgba(0, 0, 0, 0.6); /* Slightly darker background for readability */
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a shadow around the text box */
-            border: none; /* Ensure no border is applied */
-            color: white; /* Ensure text color is white */
-            text-align: center; /* Center align text */
-            margin-top: 60px; /* Push the content down from the top */
-            margin-bottom: 60px; /* Add margin to the bottom */
-            position: relative;
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            text-align: center;
+            margin-bottom: 60px;
         }
 
         /* Style for the name */
         h1 {
-            font-size: 20em; /* Increase font size to 20em */
+            font-size: 10em; /* Adjusted font size */
             margin: 0;
             font-weight: bold;
-            text-decoration: none; /* Ensure no underline */
-            text-align: center; /* Center align heading */
+            text-decoration: none;
+            text-align: center;
         }
 
-        /* Ensure no underline for links within h1 */
         h1 a {
-            text-decoration: none; /* Ensure no underline for links within h1 */
-            color: inherit; /* Ensure links inherit the color from h1 */
+            text-decoration: none;
+            color: inherit;
         }
 
         /* Paragraph styling */
         p {
             font-size: 1.2em;
-            margin: 20px 0; /* Add margin to create space around paragraphs */
-            color: black; /* Change paragraph color to black */
-            background-color: transparent; /* Remove background color */
-            padding: 10px; /* Add padding for better readability */
-            border-radius: 5px; /* Optional: rounded corners for paragraphs */
-            max-width: 100%; /* Ensure paragraphs don't exceed container width */
-            text-align: center; /* Center align paragraph text */
+            margin: 20px 0;
+            color: black;
+            background-color: transparent;
+            padding: 10px;
+            border-radius: 5px;
+            max-width: 100%;
+            text-align: center;
         }
 
         a {
             color: #4CAF50;
-            text-decoration: none; /* Ensure no underline for links */
+            text-decoration: none;
             font-weight: bold;
         }
 
         a:hover {
-            text-decoration: underline; /* Underline only on hover */
+            text-decoration: underline;
         }
 
         /* Button styling */
         .btn {
             display: inline-block;
-            padding: 12px 30px; /* Adjusted padding */
+            padding: 12px 30px;
             font-size: 1.1em;
             background-color: #4CAF50;
             color: white;
             border: none;
-            border-radius: 3px; /* Reduced corner radius */
+            border-radius: 3px;
             text-decoration: none;
             cursor: pointer;
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -118,7 +117,7 @@
             transform: translateX(-50%);
             display: flex;
             gap: 20px;
-            z-index: 1000; /* Ensure buttons are above other content */
+            z-index: 1000;
         }
     </style>
 </head>
@@ -144,19 +143,5 @@
             </a>
         </div>
     </div>
-
-    <script>
-        // JavaScript to show buttons when scrolled to the bottom
-        window.addEventListener('scroll', function() {
-            const bottomButtons = document.querySelector('.bottom-buttons');
-            if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 10) {
-                bottomButtons.style.opacity = '1';
-                bottomButtons.style.visibility = 'visible';
-            } else {
-                bottomButtons.style.opacity = '0';
-                bottomButtons.style.visibility = 'hidden';
-            }
-        });
-    </script>
 </body>
 </html>
