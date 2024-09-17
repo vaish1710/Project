@@ -42,7 +42,6 @@
 
         /* Content container for the white section */
         .content-container {
-            height: 30vh; /* Bottom 30% of the viewport height */
             background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque white */
             display: flex;
             flex-direction: column;
@@ -53,28 +52,11 @@
             border-radius: 15px;
             max-width: 90%; /* Prevent overflow on small screens */
             margin: auto; /* Center the container */
+            position: relative;
+            top: -35vh; /* Adjust to lift the content container up */
         }
 
-        /* Style for the portfolio content */
-        .portfolio {
-            width: 100%;
-            max-width: 900px;
-            padding: 20px;
-            border-radius: 15px;
-            background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white */
-            box-shadow: none; /* Remove shadow */
-            border: none;
-            color: black; /* Change text color to black */
-            text-align: center;
-        }
-
-        /* Add margin to paragraphs to push them down */
-        .portfolio p {
-            margin-top: 20px; /* Space above each paragraph */
-            margin-bottom: 20px; /* Space below each paragraph */
-        }
-
-        /* Style for the name */
+        /* Main heading */
         h1 {
             font-size: 3em; /* Adjusted to a reasonable size */
             margin: 0;
@@ -100,14 +82,10 @@
             text-align: center;
         }
 
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
+        /* Add margin to paragraphs to push them down */
+        .content-container p {
+            margin-top: 20px; /* Space above each paragraph */
+            margin-bottom: 20px; /* Space below each paragraph */
         }
 
         /* Button styling */
@@ -216,13 +194,11 @@
 
     <!-- White Background Content Section -->
     <div class="content-container">
-        <!-- Portfolio Content -->
-        <div class="portfolio">
-            <h1>Vaishnavi Paruchuri</h1>
-            <p>Data Science and Analytics Master's Student</p>
-            <p>I hold an undergraduate degree in Computer Science and am currently pursuing a master's in Data Science and Analytics. My primary interest lies in uncovering valuable outcomes from data, driving insights that lead to informed decisions and innovation.</p>
-            <p>Check out my repositories on <a href="https://github.com/vaish1710" target="_blank">GitHub</a>.</p>
-        </div>
+        <!-- Main Content -->
+        <h1>Vaishnavi Paruchuri</h1>
+        <p>Data Science and Analytics Master's Student</p>
+        <p>I hold an undergraduate degree in Computer Science and am currently pursuing a master's in Data Science and Analytics. My primary interest lies in uncovering valuable outcomes from data, driving insights that lead to informed decisions and innovation.</p>
+        <p>Check out my repositories on <a href="https://github.com/vaish1710" target="_blank">GitHub</a>.</p>
 
         <!-- Buttons -->
         <div class="button-group">
