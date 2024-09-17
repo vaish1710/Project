@@ -7,20 +7,25 @@
     <title>My GitHub Portfolio</title>
     <style>
         /* Apply a space-themed background for the entire page */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000; /* Fallback color */
-            background-image: url('https://blenderartists.org/uploads/default/original/4X/7/e/2/7e2d7bea4ac21388c4a96e1371f375c4ce00094b.jpg'); /* Space background image */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: white; /* Adjust text color for better contrast */
-            overflow-x: hidden;
-            height: 100vh; /* Full viewport height */
-            box-sizing: border-box;
-        }
+      /* Apply a space-themed background for the entire page */
+html, body {
+    height: 100%; /* Ensure the body and html cover full viewport height */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fallback color */
+    background-image: url('https://blenderartists.org/uploads/default/original/4X/7/e/2/7e2d7bea4ac21388c4a96e1371f375c4ce00094b.jpg'); /* Space background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Adjust text color for better contrast */
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
 
         /* Content container for the white section */
         .content-container {
