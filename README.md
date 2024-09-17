@@ -56,19 +56,23 @@
         }
 
         /* Style for the portfolio content */
-.portfolio {
-    width: 100%;
-    max-width: 900px;
-    padding: 20px;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white */
-    box-shadow: none; /* Remove shadow */
-    border: none;
-    color: black; /* Change text color to black */
-    text-align: center;
-    backdrop-filter: blur(0px); /* Remove any blur from the backdrop */
-}
+        .portfolio {
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white */
+            box-shadow: none; /* Remove shadow */
+            border: none;
+            color: black; /* Change text color to black */
+            text-align: center;
+        }
 
+        /* Add margin to paragraphs to push them down */
+        .portfolio p {
+            margin-top: 20px; /* Space above each paragraph */
+            margin-bottom: 20px; /* Space below each paragraph */
+        }
 
         /* Style for the name */
         h1 {
