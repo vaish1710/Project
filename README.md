@@ -22,9 +22,8 @@
             box-sizing: border-box;
         }
 
-        /* White background content section with transparent overlay */
+        /* Content container for the white section */
         .content-container {
-            position: relative;
             background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
             padding: 20px;
             border-radius: 15px;
@@ -32,11 +31,9 @@
             max-width: 900px;
             margin: 0 auto; /* Center content horizontally */
             text-align: center; /* Center text inside content */
+            position: relative;
             z-index: 1; /* Ensure this content is on top of the background */
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            margin-top: 50px; /* Space from top */
         }
 
         /* Style for the portfolio content */
@@ -51,7 +48,7 @@
 
         /* Style for the name */
         h1 {
-            font-size: 5em; /* Adjusted to a reasonable size */
+            font-size: 3em; /* Adjusted to a reasonable size */
             margin: 0;
             font-weight: bold;
             text-decoration: none;
