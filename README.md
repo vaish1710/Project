@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My GitHub Portfolio</title>
     <style>
-        /* Apply a background image */
+        /* Apply a background image for the entire page */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: white; /* Set white background for the whole page */
-            color: black; /* Default text color */
+            background-image: url('https://images.unsplash.com/photo-1487036222628-c8287f8ec31a'); /* Starry sky background */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: black;
             overflow-x: hidden;
             height: 100vh; /* Full viewport height */
             box-sizing: border-box;
@@ -47,10 +50,10 @@
             max-width: 900px;
             padding: 20px;
             border-radius: 15px;
-            background-color: rgba(0, 0, 0, 0.6);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            background-color: white; /* Set background color to white */
+            box-shadow: none; /* Remove shadow */
             border: none;
-            color: white;
+            color: black; /* Change text color to black */
             text-align: center;
         }
 
@@ -130,7 +133,7 @@
             right: 20px;
             color: black;
             font-size: 1em;
-            background-color: rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 5px 10px;
             border-radius: 5px;
         }
