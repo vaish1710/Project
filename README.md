@@ -1,10 +1,11 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My GitHub Portfolio</title>
+    <meta name="description" content="Portfolio of Vaishnavi Paruchuri, a Data Science and Analytics Master's student.">
+    <title>Vaishnavi Paruchuri's Portfolio</title>
     <style>
         /* Ensure the body and html cover full viewport height */
         html, body {
@@ -36,12 +37,13 @@
             background-repeat: no-repeat;
             position: relative;
             width: 100%;
+            filter: blur(3px); /* Add slight blur for aesthetics */
         }
 
         /* Content container for the white section */
         .content-container {
             height: 30vh; /* Bottom 30% of the viewport height */
-            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque white */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -53,7 +55,18 @@
             margin: auto; /* Center the container */
         }
 
-       
+        /* Style for the portfolio content */
+        .portfolio {
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+            box-shadow: none; /* Remove shadow */
+            border: none;
+            color: black; /* Change text color to black */
+            text-align: center;
+        }
 
         /* Style for the name */
         h1 {
@@ -114,6 +127,14 @@
             width: 40px;
             height: 40px;
             cursor: pointer;
+            background-color: transparent; /* Remove background from the mail icon */
+        }
+
+        /* Align buttons side by side */
+        .button-group {
+            display: flex;
+            gap: 10px; /* Space between the buttons */
+            margin-top: 20px;
         }
 
         /* Fixed bottom space styling */
@@ -156,6 +177,10 @@
                 margin: 10px;
                 padding: 10px;
             }
+
+            .button-group {
+                flex-direction: column;
+            }
         }
 
         @media (max-width: 480px) {
@@ -194,16 +219,14 @@
         </div>
 
         <!-- Buttons -->
-        <div class="bottom-space">
+        <div class="button-group">
             <!-- Download Resume Button -->
             <a href="https://raw.githubusercontent.com/vaish1710/CS620/main/Resume.pdf" class="btn" download="Vaishnavi_Resume.pdf">Download Resume</a>
 
             <!-- Email Icon Button -->
-            <div class="icon">
-                <a href="mailto:vaish.paruchuri@gmail.com?subject=Portfolio Inquiry">
-                    <img src="https://cdn.pixabay.com/photo/2016/06/13/17/30/mail-1454733_640.png" alt="Email Icon">
-                </a>
-            </div>
+            <a href="mailto:vaish.paruchuri@gmail.com?subject=Portfolio Inquiry" class="icon">
+                <img src="https://cdn.pixabay.com/photo/2016/06/13/17/30/mail-1454733_640.png" alt="Email Icon">
+            </a>
         </div>
     </div>
 
