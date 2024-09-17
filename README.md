@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,9 +16,9 @@
             background-repeat: no-repeat;
             color: white;
             overflow-x: hidden;
-            transform: scale(0.95);
+            transform: scale(0.85); /* Zoom out more to 85% */
             transform-origin: top left;
-            width: 105.26%;
+            width: 117.65%; /* Adjust width to counteract scaling */
             height: 100vh;
             box-sizing: border-box;
         }
@@ -28,7 +27,7 @@
         .content-container {
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Center content vertically */
+            justify-content: flex-end; /* Align content to the bottom */
             align-items: center;
             min-height: 100vh;
             padding: 20px;
