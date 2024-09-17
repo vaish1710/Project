@@ -19,7 +19,7 @@
             transform: scale(0.85); /* Zoom out more to 85% */
             transform-origin: top left;
             width: 117.65%; /* Adjust width to counteract scaling */
-            height: 100vh;
+            height: 100%; /* Ensure body covers the full height */
             box-sizing: border-box;
         }
 
@@ -29,7 +29,7 @@
             flex-direction: column;
             justify-content: flex-end; /* Align content to the bottom */
             align-items: center;
-            min-height: 100vh;
+            min-height: 150vh; /* Extend height to allow for scrolling */
             padding: 20px;
             box-sizing: border-box;
         }
@@ -118,6 +118,18 @@
             gap: 20px;
             z-index: 1000;
         }
+
+        /* Copyright Styling */
+        .copyright {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            color: white;
+            font-size: 1em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -141,6 +153,11 @@
                 <img src="https://cdn.pixabay.com/photo/2016/06/13/17/30/mail-1454733_640.png" alt="Email Icon" />
             </a>
         </div>
+    </div>
+
+    <!-- Copyright Text -->
+    <div class="copyright">
+        &copy; Vaishnavi Paruchuri
     </div>
 </body>
 </html>
