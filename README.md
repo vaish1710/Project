@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,43 +22,31 @@
             box-sizing: border-box;
         }
 
-        /* Background image container */
-        .background-image {
-            height: 70vh; /* Top 70% of the viewport height */
-            background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-            width: 100%;
-        }
-
-        /* Content container for the white section */
+        /* White background content section with transparent overlay */
         .content-container {
-            height: 30vh; /* Bottom 30% of the viewport height */
-            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            box-sizing: border-box;
-            border-radius: 15px;
             position: relative;
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+            padding: 20px;
+            border-radius: 15px;
+            box-sizing: border-box;
+            max-width: 900px;
+            margin: 0 auto; /* Center content horizontally */
+            text-align: center; /* Center text inside content */
             z-index: 1; /* Ensure this content is on top of the background */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         /* Style for the portfolio content */
         .portfolio {
-            width: 100%;
-            max-width: 900px;
             padding: 20px;
             border-radius: 15px;
             background-color: white; /* Set background color to white */
             box-shadow: none; /* Remove shadow */
             border: none;
             color: black; /* Change text color to black */
-            text-align: center;
         }
 
         /* Style for the name */
@@ -66,7 +55,6 @@
             margin: 0;
             font-weight: bold;
             text-decoration: none;
-            text-align: center;
         }
 
         h1 a {
@@ -83,7 +71,6 @@
             padding: 10px;
             border-radius: 5px;
             max-width: 100%;
-            text-align: center;
         }
 
         a {
@@ -143,11 +130,6 @@
     </style>
 </head>
 <body>
-    <!-- Background Image Section -->
-    <div class="background-image">
-        <!-- Background image is set as a background -->
-    </div>
-
     <!-- White Background Content Section -->
     <div class="content-container">
         <!-- Portfolio Content -->
