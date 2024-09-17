@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,11 +27,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 100vh; /* Ensures container fills the viewport height */
+            min-height: 120vh; /* Increased height to allow for scrolling */
             padding: 20px;
             box-sizing: border-box; /* Include padding in the height calculation */
             position: relative;
-            margin-bottom: 100px; /* Add margin to ensure footer visibility */
         }
 
         /* Style for the portfolio content */
@@ -45,7 +45,7 @@
             color: white; /* Ensure text color is white */
             text-align: center; /* Center align text */
             margin-top: auto; /* Push the content to the top of the container */
-            margin-bottom: 20px; /* Add margin to the bottom */
+            margin-bottom: 60px; /* Add margin to the bottom */
         }
 
         /* Style for the name */
@@ -66,7 +66,7 @@
         /* Paragraph styling */
         p {
             font-size: 1.2em;
-            margin: 0; /* Remove margin to eliminate space between elements */
+            margin: 20px 0; /* Add margin to create space around paragraphs */
             color: black; /* Change paragraph color to black */
             background-color: transparent; /* Remove background color */
             padding: 10px; /* Add padding for better readability */
