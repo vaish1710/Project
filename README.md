@@ -12,7 +12,7 @@
             margin: 0;
             padding: 0;
             background-color: #000; /* Fallback color */
-            background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20210815/pngtree-space-background-picture-image_668089.jpg'); /* Space background image */
+            background-image: url('https://blenderartists.org/uploads/default/original/4X/7/e/2/7e2d7bea4ac21388c4a96e1371f375c4ce00094b.jpg'); /* Space background image */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
