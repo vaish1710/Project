@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My GitHub Portfolio</title>
     <style>
-        /* Apply a background image for the entire page */
+        /* Apply a space-themed background for the entire page */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #001f3f; /* Dark blue background for space theme */
             background-image: url('https://images.unsplash.com/photo-1487036222628-c8287f8ec31a'); /* Starry sky background */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            color: black;
+            color: white; /* Adjust text color for better contrast */
             overflow-x: hidden;
             height: 100vh; /* Full viewport height */
             box-sizing: border-box;
@@ -30,18 +31,21 @@
             background-repeat: no-repeat;
             position: relative;
             width: 100%;
+            /* Optional: Add a dark overlay to blend with space theme */
+            /* background-color: rgba(0, 0, 0, 0.5); */
         }
 
         /* Content container for the white section */
         .content-container {
             height: 30vh; /* Bottom 30% of the viewport height */
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 20px;
             box-sizing: border-box;
+            border-radius: 15px;
         }
 
         /* Style for the portfolio content */
@@ -131,9 +135,9 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            color: black;
+            color: white; /* Ensure visibility on dark background */
             font-size: 1em;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(0, 0, 0, 0.7); /* Darker background for copyright */
             padding: 5px 10px;
             border-radius: 5px;
         }
