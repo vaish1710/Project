@@ -21,6 +21,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-attachment: fixed; /* Keeps the background fixed */
             color: white; /* Adjust text color for better contrast */
             overflow-x: hidden;
             box-sizing: border-box;
