@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,11 +17,7 @@
             background-repeat: no-repeat;
             color: white;
             overflow-x: hidden;
-            transform: scale(0.95); /* Zoom out to 95% */
-            transform-origin: top left;
-            width: 105.26%; /* Adjust width to counteract scaling */
-            height: 100%;
-            box-sizing: border-box;
+            /* No scaling or width adjustments */
         }
 
         /* Container to ensure content stays within viewport */
@@ -45,12 +42,12 @@
             color: white;
             text-align: center;
             margin-top: 60px;
-            margin-bottom: 120px; /* Increased margin-bottom for extra space */
+            margin-bottom: 100px; /* Extra space for scrolling */
         }
 
         /* Style for the name */
         h1 {
-            font-size: 10em; /* Adjusted font size */
+            font-size: 5em; /* Adjusted to a reasonable size */
             margin: 0;
             font-weight: bold;
             text-decoration: none;
@@ -134,7 +131,7 @@
         /* Scroll Back Up Link */
         .scroll-up {
             position: fixed;
-            bottom: 80px; /* Position above the copyright */
+            bottom: 80px; /* Position below the fixed buttons */
             left: 50%;
             transform: translateX(-50%);
             background-color: rgba(0, 0, 0, 0.7);
