@@ -28,7 +28,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 100vh; /* Ensure content fits within viewport */
+            min-height: 120vh; /* Increased height to allow for extra scrolling */
             padding: 20px;
             box-sizing: border-box;
         }
@@ -45,7 +45,7 @@
             color: white;
             text-align: center;
             margin-top: 60px;
-            margin-bottom: 60px;
+            margin-bottom: 120px; /* Increased margin-bottom for extra space */
         }
 
         /* Style for the name */
